@@ -11,7 +11,6 @@ an object in space that has been monitored for its proximity to Earth. Some of t
 classified by NASA as "is_hazardous," indicating that they pose a potential danger to our planet. <br/>
 - Exploratory Data Analysis(EDA) to create informative graphs that reveal patterns,trends, 
 and potential correlations within the dataset. <br/>
-```markdown
 ## *problems i faced and how i solved it*: <br/>
 - The Data had some missing values. <br/>
 I fixed this by filling the numerical missing values using mean function. <br/>
@@ -23,3 +22,24 @@ I fixed this using SMOTE and RandomForestClassifier. <br/>
 i fixed this by Assigning name to the hue parameter and by Setting legend=False since hue creates a legend, and it is not necessary in this case. <br/>
 - A warning because of how pandas is handling chained assignments, and it indicates that the inplace=True method is being used on a copy of the DataFrame, not the original DataFrame. In pandas versions beyond 3.0, inplace=True will no longer modify the original object when chained assignments are involved. <br/>
 I fixed this by simply not using Inplace=True. <br/> 
+## *process*: <br/> 
+1. Importing important libraries and Loading The Dataset. <br/> 
+2. Detecting The issues within the dataset. <br/> 
+3. Handling missing Values. <br/> 
+4. Dropping Duplicates. <br/> 
+5. Having a clear view for the dataset (like data types and data description). <br/> 
+6. EDA: <br/>
+  - Visualizing the Target Variable (is_hazardous) and detecting class imbalance. <br/>
+  - Creating Visualizations for Key Features. <br/>
+  - Analyzing Distributions of Numerical Features and creating Histograms. <br/>
+  - Checking Correlations Between Features by generating a correlation matrix for numerical features to assess the relationships between them and using a heatmap       to visualize correlations and identify any strong positive or negative correlations. <br/>
+  - using pairplot to explore features interactions. <br/>
+7. Data Preprocessing: <br/>
+  - Importing important modules. <br/>
+  - Dropping the features that don't affect the prediction to save runtime. <br/>
+  - Splitting the data to testing and training sets. <br/>
+  - Handling imbalanced class using SMOTE. <br/>
+  - Fixing The seaborn issues and future warnings. <br/>
+8. Prediction Results. <br/>
+9. Revealing Each Feature's Importance. <br/>
+## Conclusions:
