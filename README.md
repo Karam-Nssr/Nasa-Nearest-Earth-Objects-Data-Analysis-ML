@@ -59,3 +59,13 @@ weighted avg       0.92      0.89      0.90      6703
 1. The model performs well for the majority is_hazardous=False, but struggles with the minority is_hazardous=True, as shown by the low precision (0.36) and F1-score (0.46) for the "True" class. <br/>
 2. The high overall accuracy of 89% is driven by the correct classification of the majority class and is not reflective of the model's performance on the minority class. <br/>
 3. The balanced accuracy of 77% indicates moderate handling of class imbalance. <br/>
+4. The most important features are: <br/>
+```
+Feature Importances:
+                        Feature  Importance
+2  num__estimated_diameter_max    0.266907
+1  num__estimated_diameter_min    0.252538
+0      num__absolute_magnitude    0.207245
+3       num__relative_velocity    0.159016
+4           num__miss_distance    0.114294
+```
